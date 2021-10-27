@@ -1,0 +1,11 @@
+.header__menu-item{
+  margin-right: 34px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  @include mobile-width {
+    margin: 0 0 32px 0;
+  }
+}

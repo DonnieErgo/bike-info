@@ -1,0 +1,17 @@
+.header__burger{
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-image: url('../images/header/burger-open.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 28px;
+  right: 18px;
+  visibility: hidden;
+  opacity: 0;
+
+    @include mobile-width {
+      visibility: visible;
+      opacity: 1;
+  }
+}
