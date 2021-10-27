@@ -1,3 +1,7 @@
-.header {
-  @include font(14px, 18px, $textLightThemeBold, 500)
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  min-height: 74px;
 }

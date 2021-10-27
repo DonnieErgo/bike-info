@@ -1,6 +1,22 @@
-@import "./modules/variables.scss";
-@import "./modules/mixins.scss";
-@import "./modules/blocks/page/page.scss";
-@import "./modules/blocks/header/header.scss";
-@import "./modules/blocks/main/main.scss";
+@import url(../vendor/normalize.css);
 
+@import './modules/fonts.scss';
+
+@import './modules/variables.scss';
+
+@import './modules/mixins.scss';
+
+@import './modules/blocks/page/page.scss';
+@import './modules/blocks/page/__block/page__block.scss';
+
+@import './modules/blocks/header/header.scss';
+@import './modules/blocks/header/__menu/header__menu.scss';
+@import './modules/blocks/header/__menu/_burger-active/header__menu_burger-active.scss';
+@import './modules/blocks/header/__menu-link/header__menu-link.scss';
+@import './modules/blocks/header/__menu-item/header__menu-item.scss';
+@import './modules/blocks/header/__burger/header__burger.scss';
+@import './modules/blocks/header/__burger/_active/header__burger_active.scss';
+
+@import './modules/blocks/lead/lead.scss';
+
+@import './modules/blocks/main/main.scss';

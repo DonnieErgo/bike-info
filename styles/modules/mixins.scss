@@ -1,7 +1,27 @@
 @mixin font ($fontSize, $lineHeigt, $color, $fontWeight) {
   font-size: $fontSize;
   line-height: $lineHeigt;
-  $color: $color;
+  color: $color;
   font-weight: $fontWeight;
   font-family: 'Inter', Arial, sans-serif;
+}
+
+@mixin reset-list {
+  list-style: none;
+
+    a {
+      text-decoration: none;
+    }
+}
+
+@mixin tablet-width {
+  @media (max-width: 768px){
+      @content;
+  }
+}
+
+@mixin mobile-width {
+  @media (max-width: 440px){
+      @content;
+  }
 }
