@@ -9,6 +9,9 @@
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__block/page__block.scss';
 
+@import './modules/blocks/title/title.scss';
+@import './modules/blocks/basic-text/basic-text.scss';
+
 @import './modules/blocks/header/header.scss';
 @import './modules/blocks/header/__menu/header__menu.scss';
 @import './modules/blocks/header/__menu/_burger-active/header__menu_burger-active.scss';
@@ -18,5 +21,24 @@
 @import './modules/blocks/header/__burger/_active/header__burger_active.scss';
 
 @import './modules/blocks/lead/lead.scss';
+@import './modules/blocks/lead/__title/lead__title.scss';
+@import './modules/blocks/lead/__images/lead__images.scss';
+@import './modules/blocks/lead/__side-img/lead__side-img.scss';
+@import './modules/blocks/lead/__bicycle-area/lead__bicycle-area.scss';
+@import './modules/blocks/lead/__bisycle-card/lead__bicycle-card.scss';
+@import './modules/blocks/lead/__bisycle-img/lead__bicycle-img.scss';
+@import './modules/blocks/lead/__text/lead__text.scss';
+@import './modules/blocks/lead/__button-link/lead__button-link.scss';
+@import './modules/blocks/lead/__caption-container/lead__caption-container.scss';
+@import './modules/blocks/lead/__bicycle-name/lead__cicycle-name.scss';
+@import './modules/blocks/lead/__caption-line/lead__caption-line.scss';
 
 @import './modules/blocks/main/main.scss';
+
+.border{
+  border: 2px solid;
+}
+
+.quote{
+  height: 3000px;
+}

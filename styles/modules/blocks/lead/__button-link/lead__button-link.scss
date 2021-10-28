@@ -1,0 +1,26 @@
+.lead__button-link{
+  position: relative;
+  margin: 0;
+  text-decoration: none;
+  @include font(14px, 50px, $textDarkThemeBold, 600);
+  letter-spacing: 1px;
+  background-color: $buttonColor;
+  width: 180px;
+  height: 50px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: box-shadow ease-in-out 0.7s;
+
+  &:hover{
+    box-shadow: inset 180px 0 0 0 $buttonColorFilled;
+  }
+
+  @include mobile-width {
+    width: 284px;
+    height: 46px;
+    font-size: 13px;
+    line-height: 46px;
+    margin-top: 21px;
+  }
+}
