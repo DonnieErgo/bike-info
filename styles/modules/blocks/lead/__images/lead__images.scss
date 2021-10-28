@@ -1,0 +1,14 @@
+.lead__images{
+  position: relative;
+  grid-row: 1 / -1;
+  grid-column-start: 2;
+
+  @include tablet-width {
+    grid-row: 2 / 3;
+    grid-column-start: 1;
+  }
+
+  @include mobile-width {
+    margin: 21px 0 0 30px;
+  }
+}

@@ -1,0 +1,19 @@
+.lead__bicycle-area{
+  position: absolute;
+  height: 50%;
+  top: 43%;
+  left: 0;
+
+  @media (max-width: 1050px){
+    left: -30px;
+    top: 30%;
+  }
+
+  @include tablet-width {
+    left: -15px;
+  }
+
+  @include mobile-width {
+    left: -30px;
+  }
+}

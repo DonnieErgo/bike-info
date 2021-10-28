@@ -1,0 +1,23 @@
+.lead__side-img{
+  margin: 0;
+  margin-left: auto;
+  width: 100%;
+  height: 836px;
+  max-width: 610px;
+  background-image: url(../images/lead/sidepic.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include nb-width {
+    height: 650px;
+  }
+
+  @media (max-width: 946px){
+    height: 450px;
+  }
+
+  @include mobile-width {
+    height: 348px;
+  }
+}
