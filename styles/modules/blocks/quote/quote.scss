@@ -1,0 +1,16 @@
+.quote{
+  margin-top: 120px;
+  display: grid;
+  column-gap: 80px;
+  grid-template-columns: min-content 1fr;
+
+  @include nb-width {
+    gap: 25px;
+  }
+
+  @include tablet-width {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 80px;
+  }
+}

@@ -33,12 +33,15 @@
 @import './modules/blocks/lead/__bicycle-name/lead__cicycle-name.scss';
 @import './modules/blocks/lead/__caption-line/lead__caption-line.scss';
 
+@import './modules/blocks/quote/quote.scss';
+@import './modules/blocks/quote/__photo/quote__photo.scss';
+@import './modules/blocks/quote/__text-container/quote__text-container.scss';
+@import './modules/blocks/quote/__text/quote__text.scss';
+@import './modules/blocks/quote/__author/quote__author.scss';
+@import './modules/blocks/quote/__author-occupation/quote__author-occupation.scss';
+
 @import './modules/blocks/main/main.scss';
 
 .border{
   border: 2px solid;
-}
-
-.quote{
-  height: 3000px;
 }
