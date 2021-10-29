@@ -1,0 +1,15 @@
+.quote__author{
+  margin: 0;
+  padding: 0;
+  @include font(20px, 32px, $textLightThemeBold, 500);
+
+  @include nb-width {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @include tablet-width {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

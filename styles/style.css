@@ -423,6 +423,129 @@
   background-color: #D7D4D4;
 }
 
+.quote {
+  margin-top: 120px;
+  display: grid;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+}
+@media (max-width: 1245px) {
+  .quote {
+    gap: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 80px;
+  }
+}
+
+.quote__photo {
+  width: 650px;
+}
+@media (max-width: 1245px) {
+  .quote__photo {
+    width: 500px;
+  }
+}
+@media (max-width: 946px) {
+  .quote__photo {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .quote__photo {
+    justify-self: center;
+    width: 350px;
+  }
+}
+@media (max-width: 440px) {
+  .quote__photo {
+    padding-top: 20px;
+    border-top: 1px solid #E3E3E3;
+    width: 284px;
+  }
+}
+
+.quote__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote__text {
+  margin: 0;
+  padding: 0;
+  font-size: 34px;
+  line-height: 44px;
+  color: #151515;
+  font-weight: 600;
+  font-family: "Inter", Arial, sans-serif;
+  letter-spacing: -0.5px;
+}
+@media (max-width: 1245px) {
+  .quote__text {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .quote__text {
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+}
+
+.quote__author {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 32px;
+  color: #151515;
+  font-weight: 500;
+  font-family: "Inter", Arial, sans-serif;
+}
+@media (max-width: 1245px) {
+  .quote__author {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .quote__author {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.quote__author-occupation {
+  margin: 0;
+  padding: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  font-family: "Inter", Arial, sans-serif;
+}
+@media (max-width: 1245px) {
+  .quote__author-occupation {
+    padding: 0;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .quote__author-occupation {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
 .main {
   position: relative;
   z-index: 1;
@@ -430,8 +553,4 @@
 
 .border {
   border: 2px solid;
-}
-
-.quote {
-  height: 3000px;
 }/*# sourceMappingURL=style.css.map */
