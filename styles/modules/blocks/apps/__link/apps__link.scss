@@ -1,0 +1,10 @@
+.apps__link{
+  text-decoration: none;
+  @include font(18px, 28px, $textLightThemeBold, 600);
+  margin-right: 30px;
+
+  @include tablet-width{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

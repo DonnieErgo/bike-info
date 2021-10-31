@@ -1,0 +1,13 @@
+.apps__text{
+  max-width: 460px;
+  margin: -45px 0 0 0;
+  align-self: flex-start;
+
+  @include nb-width{
+    margin-top: 20px;
+  }
+
+  @include tablet-width{
+    margin-top: 0;
+  }
+}
