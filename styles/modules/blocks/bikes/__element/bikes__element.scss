@@ -1,0 +1,12 @@
+.bikes__element{
+  margin-right: 30px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  @include mobile-width {
+    display: flex;
+    flex-direction: column;
+  }
+}

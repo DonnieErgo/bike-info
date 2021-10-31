@@ -1,0 +1,10 @@
+
+
+.bikes__slider{
+  overflow: hidden;
+  padding: 120px 50px 210px;
+
+  @include tablet-width {
+    padding: 14px 18px 104px;
+  }
+}

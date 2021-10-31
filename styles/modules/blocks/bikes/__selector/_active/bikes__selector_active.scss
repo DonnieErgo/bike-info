@@ -1,0 +1,8 @@
+.bikes__selector_active{
+  color: $textLightThemeBold;
+  font-weight: 600;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

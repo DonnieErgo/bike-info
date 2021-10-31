@@ -52,8 +52,20 @@
 @import './modules/blocks/slider/__controls/slider__controls.scss';
 @import './modules/blocks/slider/__button/slider__button.scss';
 
-@import './modules/blocks/main/main.scss';
+@import './modules/blocks/bikes/bikes.scss';
+@import './modules/blocks/bikes/__text-cont/bikes__text-cont.scss';
+@import './modules/blocks/bikes/__title/bikes__title.scss';
+@import './modules/blocks/bikes/__menu-cont/bikes__menu-cont.scss';
+@import './modules/blocks/bikes/__select-cont/bikes__select-cont.scss';
+@import './modules/blocks/bikes/__selector/bikes__selector.scss';
+@import './modules/blocks/bikes/__selector/_active/bikes__selector_active.scss';
+@import './modules/blocks/bikes/__selector/_inactive/bikes__selector_inactive.scss';
+@import './modules/blocks/bikes/__submenu/bikes__submenu.scss';
+@import './modules/blocks/bikes/__slider/bikes__slider.scss';
+@import './modules/blocks/bikes/__slider-wrapper/bikes__slider-wrapper.scss';
+@import './modules/blocks/bikes/__element/bikes__element.scss';
+@import './modules/blocks/bikes/__card/bikes__card.scss';
+@import './modules/blocks/bikes/__photo/bikes__photo.scss';
+@import './modules/blocks/bikes/__name/bikes__name.scss';
 
-.border{
-  border: 2px solid;
-}
+@import './modules/blocks/main/main.scss';

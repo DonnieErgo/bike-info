@@ -1,0 +1,7 @@
+.bikes__slider-wrapper{
+  @include reset-list;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  margin: 0;
+}

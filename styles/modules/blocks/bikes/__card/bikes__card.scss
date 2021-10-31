@@ -1,0 +1,21 @@
+.bikes__card{
+  @include card-shadow;
+  border-radius: 20px;
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundLightTheme;
+
+  @include tablet-width {
+    width: 284px;
+    height: 284px;
+  }
+
+  @include mobile-width {
+    margin-top: 20px;
+    padding-bottom: 22px;
+    position: relative;
+  }
+}
