@@ -40,6 +40,18 @@
 @import './modules/blocks/quote/__author/quote__author.scss';
 @import './modules/blocks/quote/__author-occupation/quote__author-occupation.scss';
 
+@import './modules/blocks/slider/slider.scss';
+@import './modules/blocks/slider/__container/slider__container.scss';
+@import './modules/blocks/slider/__title/slider__title.scss';
+@import './modules/blocks/slider/__text/slider__text.scss';
+@import './modules/blocks/slider/__slider/slider__slider.scss';
+@import './modules/blocks/slider/__slider-wrapper/slider__slider-wrapper.scss';
+@import './modules/blocks/slider/__picture-container/slider__picture-container.scss';
+@import './modules/blocks/slider/__img/slider__img.scss';
+@import './modules/blocks/slider/__icon/slider__icon.scss';
+@import './modules/blocks/slider/__controls/slider__controls.scss';
+@import './modules/blocks/slider/__button/slider__button.scss';
+
 @import './modules/blocks/main/main.scss';
 
 .border{

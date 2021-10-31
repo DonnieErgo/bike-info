@@ -6,9 +6,20 @@
   font-family: 'Inter', Arial, sans-serif;
 }
 
+@mixin card-shadow {
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+}
+
 @mixin mobile-border {
-  padding-top: 20px;
-  border-top: 1px solid #E3E3E3;
+  &::after {
+    content: "";
+    background: #E3E3E3;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 1px;
+    width: calc(100% - 36px);
+  }
 }
 
 @mixin reset-list {

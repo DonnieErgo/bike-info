@@ -15,7 +15,6 @@
   }
 
   @include mobile-width {
-    @include mobile-border;
     width: 284px;
   }
 }

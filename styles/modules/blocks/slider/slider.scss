@@ -1,0 +1,9 @@
+.slider{
+  max-width: 1440px;
+  padding: 0;
+  position: relative;
+
+  @include mobile-width {
+    @include mobile-border;
+  }
+}

@@ -1,0 +1,17 @@
+.slider__icon{
+  background-image: url(../images/slider/sh-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+
+  @include mobile-width {
+    width: 70px;
+    height: 28px;
+    bottom: 14px;
+  }
+}

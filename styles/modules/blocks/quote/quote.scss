@@ -3,6 +3,7 @@
   display: grid;
   column-gap: 80px;
   grid-template-columns: min-content 1fr;
+  position: relative;
 
   @include nb-width {
     gap: 25px;
@@ -12,5 +13,10 @@
     grid-template-columns: 1fr;
     gap: 40px;
     margin-top: 80px;
+  }
+
+  @include mobile-width {
+    padding-top: 20px;
+    @include mobile-border;
   }
 }
