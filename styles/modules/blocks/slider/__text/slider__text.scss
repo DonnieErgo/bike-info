@@ -1,5 +1,6 @@
 .slider__text{
   max-width: 460px;
+  margin: 0;
 
   @include tablet-width {
     grid-column: 1 / -1;

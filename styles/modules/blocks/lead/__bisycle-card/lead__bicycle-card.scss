@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
+  @include lead-shadow;
   border-radius: 20px;
   top: 347px;
 

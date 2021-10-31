@@ -56,7 +56,7 @@
       <section class="slider page__block">
         <div class="slider__container">
           <h2 class="slider__title title">Шоссе</h2>
-          <b class="slider__text basic-text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</b>
+          <p class="slider__text basic-text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
           <div class="slider__slider">
             <div class="slider__slider-wrapper">
               <div class="slider__picture-container">
@@ -81,8 +81,37 @@
         </div>
       </section>
 
-      <!-- Секция bikes пока что сверстана без JS -->
-      <section class="bikes"></section>
+      <!-- Секция bikes пока что сверстана без JS/выпадающего меню -->
+      <section class="bikes page__block">
+        <div class="bikes__text-cont">
+          <h2 class="bikes__title title">Велосипеды</h2>
+          <div class="bikes__menu-cont">
+            <ul class="bikes__select-cont">
+              <li class="bikes__selector basic-text bikes__selector_active">Шоссе</li>
+              <li class="bikes__selector basic-text bikes__selector_inactive">Грэвел</li>
+              <li class="bikes__selector basic-text bikes__selector_inactive">ТТ</li>
+            </ul>
+            <div class="bikes__submenu"></div>
+          </div>
+
+        </div>
+        <div class="bikes__slider">
+          <ul class="bikes__slider-wrapper">
+            <li class="bikes__element">
+              <div class="bikes__card"><img src="./images/bikes/bike-sh-1.png" alt="Фото велосипеда" class="bikes__photo"></div>
+              <p class="bikes__name">Cervelo Caledonia-5</p>
+            </li>
+            <li class="bikes__element">
+              <div class="bikes__card"><img src="./images/bikes/bike-sh-2.png" alt="Фото велосипеда" class="bikes__photo"></div>
+              <p class="bikes__name">Cannondale Systemsix Himod</p>
+            </li>
+            <li class="bikes__element">
+              <div class="bikes__card"><img src="./images/bikes/bike-sh-3.png" alt="Фото велосипеда" class="bikes__photo"></div>
+              <p class="bikes__name">Trek Domane SL-7</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="apps"></section>
 

@@ -1,0 +1,11 @@
+.bikes__select-cont{
+  padding: 0;
+  margin: 0;
+  @include reset-list;
+  display: flex;
+  flex-flow: row nowrap;
+
+  @include mobile-width{
+
+  }
+}

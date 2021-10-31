@@ -1,0 +1,17 @@
+.bikes__name{
+  position: relative;
+  margin: 22px 0 0 0;
+  padding: 0;
+  @include font (18px, 22px, $textLightThemeBold, 600);
+
+  @include tablet-width {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include mobile-width {
+    z-index: 5;
+    margin-top: -35px;
+    align-self: center;
+  }
+}
