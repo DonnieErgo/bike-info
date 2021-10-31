@@ -1,0 +1,8 @@
+.slider__text{
+  max-width: 460px;
+
+  @include tablet-width {
+    grid-column: 1 / -1;
+    grid-row-start: 3;
+  }
+}

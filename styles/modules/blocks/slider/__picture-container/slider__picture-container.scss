@@ -1,0 +1,8 @@
+.slider__picture-container{
+  position: relative;
+  margin-right: 40px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
