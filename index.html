@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
+  <!-- По всем блокам кроме footer закончен адаптив и практически весь css -->
+
   <body class="page">
 
     <header class="header">
@@ -52,7 +54,7 @@
         </div>
       </section>
 
-      <!-- Подготовлена структура под будущий JS-слайдер -->
+      <!-- Подготовлена структура и весь css под JS -->
       <section class="slider page__block" id="gradients">
         <div class="slider__container">
           <h2 class="slider__title title">Шоссе</h2>
@@ -81,7 +83,7 @@
         </div>
       </section>
 
-      <!-- Секция bikes пока что сверстана без JS/выпадающего меню -->
+      <!-- Подготовлена структура и весь css под JS -->
       <section class="bikes page__block" id="bikes">
         <div class="bikes__text-cont">
           <h2 class="bikes__title title">Велосипеды</h2>
@@ -113,10 +115,19 @@
         </div>
       </section>
 
-      <section class="apps" id="apps"></section>
+      <section class="apps page__block" id="apps">
+        <h2 class="apps__title title">Тренировки</h2>
+        <p class="apps__text basic-text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+        <div class="apps__links">
+          <a href="https://www.strava.com" target="_blank" class="apps__link ">Strava</a>
+          <a href="https://www.komoot.com" target="_blank" class="apps__link">Komoot</a>
+        </div>
+        <img src="./images/apps/pic1.png" alt="Фото" class="apps__img">
+      </section>
 
     </main>
 
+    <!-- Футер в работе -->
     <footer class="footer"></footer>
 
     <script src="./scripts/script.js"></script>
