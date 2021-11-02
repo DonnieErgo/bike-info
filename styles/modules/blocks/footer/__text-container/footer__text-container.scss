@@ -1,0 +1,8 @@
+.footer__text-container{
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include tablet-width {
+    width: 284px;
+  }
+}

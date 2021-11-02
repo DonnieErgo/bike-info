@@ -17,5 +17,6 @@
 
   @include mobile-width{
     @include mobile-border;
+    margin-bottom: 60px;
   }
 }
