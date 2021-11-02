@@ -1,11 +1,25 @@
 .bikes__select-cont{
+  position: relative;
   padding: 0;
   margin: 0;
   @include reset-list;
   display: flex;
   flex-flow: row nowrap;
+  background-color: transparent;
 
   @include mobile-width{
+    background-image: url('/images/bikes/menu-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: top 11px right 10px;
+    flex-flow: column;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 
+    // &:hover{
+    //   opacity: 0.9;
+    // }
   }
 }

@@ -760,6 +760,7 @@
 }
 
 .bikes__text-cont {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline;
@@ -779,26 +780,63 @@
 }
 @media (max-width: 768px) {
   .bikes__title {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 440px) {
+  .bikes__menu-cont {
+    position: relative;
+    width: 114px;
+    height: 30px;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    border-radius: 2px;
   }
 }
 
 .bikes__select-cont {
+  position: relative;
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  background-color: transparent;
 }
 .bikes__select-cont a {
   text-decoration: none;
 }
+@media (max-width: 440px) {
+  .bikes__select-cont {
+    background-image: url("/images/bikes/menu-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: top 11px right 10px;
+    flex-flow: column;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
 .bikes__selector {
+  position: relative;
   margin-right: 40px;
   cursor: pointer;
 }
 .bikes__selector:last-child {
   margin-right: 0;
+}
+@media (max-width: 440px) {
+  .bikes__selector {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    margin: 7px 0 0 11px;
+    z-index: 8;
+  }
 }
 
 .bikes__selector_active {
@@ -808,9 +846,19 @@
 .bikes__selector_active:hover {
   opacity: 0.75;
 }
+@media (max-width: 440px) {
+  .bikes__selector_active:hover {
+    opacity: 1;
+  }
+}
 
 .bikes__selector_inactive:hover {
   opacity: 0.6;
+}
+@media (max-width: 440px) {
+  .bikes__selector_inactive:hover {
+    opacity: 0.85;
+  }
 }
 
 .bikes__slider {
@@ -819,7 +867,7 @@
 }
 @media (max-width: 768px) {
   .bikes__slider {
-    padding: 14px 18px 104px;
+    padding: 0 18px 104px;
   }
 }
 
@@ -951,12 +999,22 @@
 }
 @media (max-width: 768px) {
   .apps__text {
-    margin-top: 0;
+    margin: 0 auto 0;
   }
 }
 
 .apps__links {
   align-self: flex-end;
+}
+@media (max-width: 768px) {
+  .apps__links {
+    margin: 0 auto 0;
+  }
+}
+@media (max-width: 440px) {
+  .apps__links {
+    margin: 0;
+  }
 }
 
 .apps__link {
@@ -1195,4 +1253,10 @@
 .main {
   position: relative;
   z-index: 1;
+}
+
+.bikes__select-cont_active {
+  height: 68px;
+  background-color: #c8c8c8;
+  list-style: square inside;
 }/*# sourceMappingURL=style.css.map */
