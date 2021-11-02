@@ -89,3 +89,12 @@
 
 @import './modules/blocks/main/main.scss';
 
+// .bikes__selector_hide {
+//   display: none;
+// }
+
+.bikes__select-cont_active{
+  height: 68px;
+  background-color: rgb(200, 200, 200);
+  list-style: square inside;
+}

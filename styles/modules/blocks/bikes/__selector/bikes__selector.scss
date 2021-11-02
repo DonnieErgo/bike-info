@@ -1,8 +1,17 @@
 .bikes__selector{
+  position: relative;
   margin-right: 40px;
   cursor: pointer;
 
   &:last-child{
     margin-right: 0;
+  }
+
+  @include mobile-width {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    margin: 7px 0 0 11px;
+    z-index: 8;
   }
 }
