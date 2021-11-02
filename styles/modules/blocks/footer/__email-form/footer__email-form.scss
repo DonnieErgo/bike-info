@@ -1,0 +1,13 @@
+.footer__email-form{
+  @include font(13px, 28px, $textLightThemeBold, 500);
+  position: relative;
+  border: none;
+  margin: 0 0 100px 0;
+  padding: 0;
+  width: 360px;
+  height: 50px;
+
+  @include mobile-width {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.footer__container{
+  display: flex;
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+
+  @include tablet-width {
+    padding: 0 18px;
+  }
+}

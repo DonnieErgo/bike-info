@@ -1,0 +1,32 @@
+.footer__email-input{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  line-height: 50px;
+  padding-left: 20px;
+
+  &:focus {
+    border: 1px solid rgb(199, 199, 199);
+  }
+
+  &::placeholder {
+    @include font(inherit, inherit, inherit, inherit);
+    transition: opacity 0.3s ease-in-out;
+    color: $textLightTheme;
+    opacity: 0.7;
+  }
+
+  &:hover::placeholder {
+    color: $textLightThemeBold;
+    opacity: 1;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
