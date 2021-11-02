@@ -1,7 +1,6 @@
 # Project HARD -- 02
 
 Work in progress:
-- Drop-down меню в bikes
 - JS в bikes
 - JS в slider
 - Тёмная тема
