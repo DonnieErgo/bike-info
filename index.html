@@ -15,12 +15,14 @@
   <body class="page">
 
     <header class="header">
-      <ul class="header__menu page__block">
-        <li class="header__menu-item"><a href="#gradients" class="header__menu-link">Покрытия и градиенты</a></li>
-        <li class="header__menu-item"><a href="#bikes" class="header__menu-link">Велосипеды</a></li>
-        <li class="header__menu-item"><a href="#apps" class="header__menu-link">Тренировки</a></li>
-      </ul>
-      <div class="header__burger"></div>
+      <nav>
+        <ul class="header__menu page__block">
+          <li class="header__menu-item"><a href="#gradients" class="header__menu-link">Покрытия и градиенты</a></li>
+          <li class="header__menu-item"><a href="#bikes" class="header__menu-link">Велосипеды</a></li>
+          <li class="header__menu-item"><a href="#apps" class="header__menu-link">Тренировки</a></li>
+        </ul>
+        <button type="button" class="header__burger"></button>
+      </nav>
     </header>
 
     <main class="main">
@@ -77,8 +79,8 @@
             </div>
           </div>
           <div class="slider__controls">
-            <button class="slider__button"></button>
-            <button class="slider__button"></button>
+            <button type="button" class="slider__button"></button>
+            <button type="button" class="slider__button"></button>
           </div>
         </div>
       </section>
@@ -88,29 +90,62 @@
         <div class="bikes__text-cont">
           <h2 class="bikes__title title">Велосипеды</h2>
           <div class="bikes__menu-cont">
-            <ul class="bikes__select-cont">
-              <li class="bikes__selector basic-text bikes__selector_active shosse">Шоссе</li>
-              <li class="bikes__selector basic-text bikes__selector_inactive bikes__selector_ grevel">Грэвел</li>
-              <li class="bikes__selector basic-text bikes__selector_inactive bikes__selector_hide triatlon">ТТ</li>
-            </ul>
+            <div class="bikes__select-cont">
+              <button type="button" class="bikes__selector-btn">Шоссе</button>
+              <button type="button" class="bikes__selector basic-text bikes__selector_active bikes__selector_shosse">Шоссе</button>
+              <button type="button" class="bikes__selector basic-text bikes__selector_grevel">Грэвел</button>
+              <button type="button" class="bikes__selector basic-text bikes__selector_triatlon">ТТ</button>
+            </div>
           </div>
-
         </div>
         <div class="bikes__slider">
-          <ul class="bikes__slider-wrapper">
-            <li class="bikes__element">
-              <div class="bikes__card"><img src="./images/bikes/bike-sh-1.png" alt="Фото велосипеда" class="bikes__photo"></div>
+          <ul class="bikes__slider-wrapper bikes__slider-wrapper_active">
+            <li class="bikes__element bikes__element_target bikes__element_active">
+              <a href="https://www.cervelo.com/en/caledonia-5" target="_blank" class="bikes__card"><img src="./images/bikes/bike-sh-1.png" alt="Фото велосипеда" class="bikes__photo"></a>
               <p class="bikes__name">Cervelo Caledonia-5</p>
             </li>
-            <li class="bikes__element">
-              <div class="bikes__card"><img src="./images/bikes/bike-sh-2.png" alt="Фото велосипеда" class="bikes__photo"></div>
+            <li class="bikes__element bikes__element_target">
+              <a href="https://www.cannondale.com/en-eu/bikes/road/race/systemsix/systemsix-hi-mod-ultegra-di2" target="_blank" class="bikes__card"><img src="./images/bikes/bike-sh-2.png" alt="Фото велосипеда" class="bikes__photo"></a>
               <p class="bikes__name">Cannondale Systemsix Himod</p>
             </li>
-            <li class="bikes__element">
-              <div class="bikes__card"><img src="./images/bikes/bike-sh-3.png" alt="Фото велосипеда" class="bikes__photo"></div>
+            <li class="bikes__element bikes__element_target">
+              <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank" class="bikes__card"><img src="./images/bikes/bike-sh-3.png" alt="Фото велосипеда" class="bikes__photo"></a>
               <p class="bikes__name">Trek Domane SL-7</p>
             </li>
           </ul>
+          <ul class="bikes__slider-wrapper">
+            <li class="bikes__element bikes__element_active">
+              <a href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE" target="_blank" class="bikes__card"><img src="./images/bikes/bike-gr-1.png" alt="Фото велосипеда" class="bikes__photo"></a>
+              <p class="bikes__name">Cervelo Aspero GRX 810</p>
+            </li>
+            <li class="bikes__element">
+              <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9" target="_blank" class="bikes__card"><img src="./images/bikes/bike-gr-2.png" alt="Фото велосипеда" class="bikes__photo"></a>
+              <p class="bikes__name">Specialized S-Works Diverge</p>
+            </li>
+            <li class="bikes__element">
+              <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8" target="_blank" class="bikes__card"><img src="./images/bikes/bike-gr-3.png" alt="Фото велосипеда" class="bikes__photo"></a>
+              <p class="bikes__name">Cannondale Topstone Lefty 3</p>
+            </li>
+          </ul>
+          <ul class="bikes__slider-wrapper">
+            <li class="bikes__element bikes__element_active">
+              <a href="https://www.specialized.com/us/en/shiv-sport/p/129271?color=240037-129271" target="_blank" class="bikes__card"><img src="./images/bikes/bike-tt-1.png" alt="Фото велосипеда" class="bikes__photo"></a>
+              <p class="bikes__name">Specialized S-Works Shiv</p>
+            </li>
+            <li class="bikes__element">
+              <a href="https://www.thebicyclelounge.co.uk/2021-bmc-timemachine-01-one-force-etap-axs-disc-tt-tri-bike/" target="_blank" class="bikes__card"><img src="./images/bikes/bike-tt-2.png" alt="Фото велосипеда" class="bikes__photo"></a>
+              <p class="bikes__name">BMC Timemachine 01 ONE</p>
+            </li>
+            <li class="bikes__element">
+              <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q" target="_blank" class="bikes__card"><img src="./images/bikes/bike-tt-3.png" alt="Фото велосипеда" class="bikes__photo"></a>
+              <p class="bikes__name">Cervelo P-Series</p>
+            </li>
+          </ul>
+          <div class="bikes__dots">
+            <button type="button" class="bikes__dot bikes__dot_one bikes__dot_active"></button>
+            <button type="button" class="bikes__dot bikes__dot_two"></button>
+            <button type="button" class="bikes__dot bikes__dot_three"></button>
+          </div>
         </div>
       </section>
 

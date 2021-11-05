@@ -144,6 +144,7 @@
 }
 
 .header__menu-link {
+  transition: opacity 0.2s ease-in-out;
   font-size: 14px;
   line-height: 18px;
   color: #151515;
@@ -182,10 +183,14 @@
   background-image: url("../images/header/burger-open.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   top: 22px;
   right: 18px;
   visibility: hidden;
   opacity: 0;
+  color: transparent;
+  padding: 0;
+  border: none;
 }
 @media (max-width: 440px) {
   .header__burger {
@@ -784,7 +789,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 768px) {
   .bikes__menu-cont {
     position: relative;
     width: 114px;
@@ -807,11 +812,19 @@
 .bikes__select-cont a {
   text-decoration: none;
 }
-@media (max-width: 440px) {
+@media (max-width: 1245px) {
   .bikes__select-cont {
-    background-image: url("/images/bikes/menu-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: top 11px right 10px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 950px) {
+  .bikes__select-cont {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .bikes__select-cont {
+    margin-right: 0;
     flex-flow: column;
     z-index: 8;
     width: 100%;
@@ -821,21 +834,44 @@
   }
 }
 
+@media (max-width: 768px) {
+  .bikes__select-cont_active {
+    height: 100px;
+    background-color: #e2e2e2;
+  }
+}
+
 .bikes__selector {
   position: relative;
   margin-right: 40px;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 .bikes__selector:last-child {
   margin-right: 0;
 }
-@media (max-width: 440px) {
+.bikes__selector:hover {
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .bikes__selector:hover {
+    opacity: 0.85;
+  }
+}
+@media (max-width: 768px) {
   .bikes__selector {
     font-weight: 600;
     font-size: 11px;
     line-height: 14px;
-    margin: 7px 0 0 11px;
+    margin: 5px 0 0 11px;
     z-index: 8;
+  }
+  .bikes__selector:nth-child(0) {
+    margin-top: 0;
   }
 }
 
@@ -852,26 +888,52 @@
   }
 }
 
-.bikes__selector_inactive:hover {
-  opacity: 0.6;
+.bikes__selector-btn {
+  display: none;
 }
-@media (max-width: 440px) {
-  .bikes__selector_inactive:hover {
-    opacity: 0.85;
+@media (max-width: 768px) {
+  .bikes__selector-btn {
+    display: block;
+    background-image: url("../images/bikes/menu-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: top 5px right 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    margin: 7px 0 0 11px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
   }
 }
 
 .bikes__slider {
+  display: flex;
+  flex-flow: column;
   overflow: hidden;
   padding: 120px 50px 210px;
 }
+@media (max-width: 1050px) {
+  .bikes__slider {
+    padding: 50px 50px 104px;
+  }
+}
 @media (max-width: 768px) {
   .bikes__slider {
-    padding: 0 18px 104px;
+    padding: 0 18px 60px;
   }
 }
 
 .bikes__slider-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
@@ -881,18 +943,62 @@
 .bikes__slider-wrapper a {
   text-decoration: none;
 }
+@media (max-width: 1245px) {
+  .bikes__slider-wrapper {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .bikes__slider-wrapper {
+    justify-content: unset;
+    max-width: 284px;
+    overflow: hidden;
+    margin-left: 25%;
+  }
+}
+@media (max-width: 440px) {
+  .bikes__slider-wrapper {
+    margin-left: 0;
+  }
+}
+
+.bikes__slider-wrapper_active {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
 
 .bikes__element {
   margin-right: 30px;
+  transition: all 0.4s ease-in-out;
 }
 .bikes__element:last-child {
   margin-right: 0;
 }
-@media (max-width: 440px) {
+@media (max-width: 1245px) {
+  .bikes__element {
+    margin-right: 10px;
+  }
+  .bikes__element:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
   .bikes__element {
     display: flex;
     flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+    position: absolute;
   }
+}
+
+.bikes__element_active {
+  visibility: visible;
+  opacity: 1;
+  position: static;
+  transition: visibility 0.1s linear 0s, opacity 300ms;
 }
 
 .bikes__card {
@@ -904,6 +1010,24 @@
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
+}
+@media (max-width: 1245px) {
+  .bikes__card {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 1050px) {
+  .bikes__card {
+    width: 290px;
+    height: 290px;
+  }
+}
+@media (max-width: 950px) {
+  .bikes__card {
+    width: 220px;
+    height: 220px;
+  }
 }
 @media (max-width: 768px) {
   .bikes__card {
@@ -927,24 +1051,71 @@
   position: relative;
   margin: 22px 0 0 0;
   padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 18px;
   line-height: 22px;
   color: #151515;
   font-weight: 600;
   font-family: "Inter", Arial, sans-serif;
 }
+@media (max-width: 950px) {
+  .bikes__name {
+    max-width: 200px;
+  }
+}
 @media (max-width: 768px) {
   .bikes__name {
     font-size: 14px;
     line-height: 18px;
+    max-width: none;
+    z-index: 5;
+    margin-top: -35px;
+    margin-left: 15px;
+    align-self: center;
   }
 }
 @media (max-width: 440px) {
   .bikes__name {
-    z-index: 5;
-    margin-top: -35px;
-    align-self: center;
+    margin-top: -34px;
+    margin-left: 0;
   }
+}
+
+.bikes__dots {
+  display: none;
+}
+@media (max-width: 768px) {
+  .bikes__dots {
+    display: block;
+    margin-top: 38px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+  }
+}
+
+.bikes__dot {
+  width: 4px;
+  height: 4px;
+  background: #CACACA;
+  border-radius: 50%;
+  margin: 0 2.5px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+.bikes__dot:hover {
+  opacity: 0.8;
+  background: #151515;
+  transform: scale(1.2);
+}
+
+.bikes__dot_active {
+  background: #151515;
 }
 
 .apps {
@@ -1025,6 +1196,10 @@
   font-weight: 600;
   font-family: "Inter", Arial, sans-serif;
   margin-right: 30px;
+  transition: opacity 0.2s ease-in-out;
+}
+.apps__link:hover {
+  opacity: 0.75;
 }
 @media (max-width: 768px) {
   .apps__link {
@@ -1253,10 +1428,4 @@
 .main {
   position: relative;
   z-index: 1;
-}
-
-.bikes__select-cont_active {
-  height: 68px;
-  background-color: #c8c8c8;
-  list-style: square inside;
 }/*# sourceMappingURL=style.css.map */

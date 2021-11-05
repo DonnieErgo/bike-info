@@ -1,7 +1,25 @@
 .bikes__slider-wrapper{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
   @include reset-list;
   display: flex;
   flex-flow: row nowrap;
   padding: 0;
   margin: 0;
+
+  @include nb-width {
+    justify-content: center;
+  }
+
+  @include tablet-width {
+    justify-content: unset;
+    max-width: 284px;
+    overflow: hidden;
+    margin-left: 25%;
+  }
+
+  @include mobile-width {
+    margin-left: 0;
+  }
 }

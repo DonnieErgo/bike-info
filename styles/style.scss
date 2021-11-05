@@ -57,16 +57,22 @@
 @import './modules/blocks/bikes/__title/bikes__title.scss';
 @import './modules/blocks/bikes/__menu-cont/bikes__menu-cont.scss';
 @import './modules/blocks/bikes/__select-cont/bikes__select-cont.scss';
+@import './modules/blocks/bikes/__select-cont/__select-cont_active/bikes__select-cont_active.scss';
 @import './modules/blocks/bikes/__selector/bikes__selector.scss';
 @import './modules/blocks/bikes/__selector/_active/bikes__selector_active.scss';
-@import './modules/blocks/bikes/__selector/_inactive/bikes__selector_inactive.scss';
+@import './modules/blocks/bikes/__selector-btn/bikes__selector-btn.scss';
 @import './modules/blocks/bikes/__submenu/bikes__submenu.scss';
 @import './modules/blocks/bikes/__slider/bikes__slider.scss';
 @import './modules/blocks/bikes/__slider-wrapper/bikes__slider-wrapper.scss';
+@import './modules/blocks/bikes/__slider-wrapper/__slider-wrapper_active/bikes__slider-wrapper_active.scss';
 @import './modules/blocks/bikes/__element/bikes__element.scss';
+@import './modules/blocks/bikes/__element/__element_active/bikes__element_active.scss';
 @import './modules/blocks/bikes/__card/bikes__card.scss';
 @import './modules/blocks/bikes/__photo/bikes__photo.scss';
 @import './modules/blocks/bikes/__name/bikes__name.scss';
+@import './modules/blocks/bikes/__dots/bikes__dots.scss';
+@import './modules/blocks/bikes/__dot/bikes__dot.scss';
+@import './modules/blocks/bikes/__dot/__dot_active/bikes__dot_active.scss';
 
 @import './modules/blocks/apps/apps.scss';
 @import './modules/blocks/apps/__title/apps__title.scss';
@@ -88,13 +94,3 @@
 @import './modules/blocks/footer/__logo/footer__logo.scss';
 
 @import './modules/blocks/main/main.scss';
-
-// .bikes__selector_hide {
-//   display: none;
-// }
-
-.bikes__select-cont_active{
-  height: 68px;
-  background-color: rgb(200, 200, 200);
-  list-style: square inside;
-}
