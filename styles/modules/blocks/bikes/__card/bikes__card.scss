@@ -8,6 +8,21 @@
   align-items: center;
   background-color: $backgroundLightTheme;
 
+  @include nb-width {
+    width: 320px;
+    height: 320px;
+  }
+
+  @media (max-width: 1050px){
+    width: 290px;
+    height: 290px;
+  }
+
+  @media (max-width: 950px){
+    width: 220px;
+    height: 220px;
+  }
+
   @include tablet-width {
     width: 284px;
     height: 284px;

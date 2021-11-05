@@ -1,0 +1,7 @@
+.bikes__select-cont_active{
+
+  @include tablet-width {
+    height: 100px;
+    background-color: rgb(226, 226, 226);
+  }
+}

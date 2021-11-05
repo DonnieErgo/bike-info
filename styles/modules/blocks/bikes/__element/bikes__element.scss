@@ -1,12 +1,25 @@
 .bikes__element{
   margin-right: 30px;
+  transition: all .4s ease-in-out;
 
   &:last-child{
     margin-right: 0;
   }
 
-  @include mobile-width {
+  @include nb-width {
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  @include tablet-width {
     display: flex;
     flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+    position: absolute;
   }
 }

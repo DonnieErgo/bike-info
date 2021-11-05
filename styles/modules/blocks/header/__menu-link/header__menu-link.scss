@@ -1,5 +1,7 @@
 .header__menu-link {
+  transition: opacity 0.2s ease-in-out;
   @include font(14px, 18px, $textLightThemeBold, 500);
+  
   @include mobile-width {
     @include font(18px, 18px, $textLightThemeBold, 500);
   }

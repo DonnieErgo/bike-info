@@ -1,10 +1,14 @@
-
-
 .bikes__slider{
+  display: flex;
+  flex-flow: column;
   overflow: hidden;
   padding: 120px 50px 210px;
 
+  @media (max-width: 1050px){
+    padding: 50px 50px 104px;
+  }
+
   @include tablet-width {
-    padding: 0 18px 104px;
+    padding: 0 18px 60px;
   }
 }
