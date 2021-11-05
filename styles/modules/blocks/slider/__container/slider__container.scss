@@ -4,9 +4,16 @@
   max-width: 1320px;
   margin: 0 0 0 auto;
   padding: 0 0 0 70px;
+  visibility: hidden;
+  opacity: 0;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  transition: all 0.5s ease-in-out;
 
   @include nb-width {
     padding-left: 50px;
+    margin-left: 0;
   }
 
   @include tablet-width {

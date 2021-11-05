@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
-  <!-- По всем блокам кроме footer закончен адаптив и практически весь css -->
-
   <body class="page">
 
     <header class="header">
@@ -56,36 +54,63 @@
         </div>
       </section>
 
-      <!-- Подготовлена структура и весь css под JS -->
       <section class="slider page__block" id="gradients">
-        <div class="slider__container">
+        <article class="slider__container slider__container_active">
           <h2 class="slider__title title">Шоссе</h2>
           <p class="slider__text basic-text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
           <div class="slider__slider">
             <div class="slider__slider-wrapper">
               <div class="slider__picture-container">
                 <img src="./images/slider/pic1.png" alt="Фото дороги" class="slider__img">
-                <div class="slider__icon"></div>
+                <div class="slider__icon">
+                  <img src="./images/slider/sh-icon.svg" alt="пиктограмма шоссе" class="slider__icon-pic">
+                </div>
               </div>
               <div class="slider__picture-container">
                 <img src="./images/slider/pic2.png" alt="Фото дороги" class="slider__img">
               </div>
+            </div>
+          </div>
+        </article>
+        <article class="slider__container">
+          <h2 class="slider__title title">Грэвел</h2>
+          <p class="slider__text basic-text">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+          <div class="slider__slider">
+            <div class="slider__slider-wrapper">
+              <div class="slider__picture-container">
+                <img src="./images/slider/pic2.png" alt="Фото дороги" class="slider__img">
+                <div class="slider__icon">
+                  <img src="./images/slider/gr-icon.svg" alt="пиктограмма грэвел" class="slider__icon-pic">
+                </div>
+              </div>
               <div class="slider__picture-container">
                 <img src="./images/slider/pic3.png" alt="Фото дороги" class="slider__img">
               </div>
+            </div>
+          </div>
+        </article><article class="slider__container">
+          <h2 class="slider__title title">ТТ</h2>
+          <p class="slider__text basic-text">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
+          <div class="slider__slider">
+            <div class="slider__slider-wrapper">
               <div class="slider__picture-container">
-                <img src="./images/slider/pic1.png" alt="Фото дороги" class="slider__img">
+                <img src="./images/slider/pic3.png" alt="Фото дороги" class="slider__img">
+                <div class="slider__icon">
+                  <img src="./images/slider/tt-icon.svg" alt="пиктограмма тт" class="slider__icon-pic">
+                </div>
+              </div>
+              <div class="slider__picture-container">
+                <img src="./images/slider/pic4.png" alt="Фото дороги" class="slider__img">
               </div>
             </div>
           </div>
-          <div class="slider__controls">
-            <button type="button" class="slider__button"></button>
-            <button type="button" class="slider__button"></button>
-          </div>
+        </article>
+        <div class="slider__controls">
+          <button type="button" class="slider__button"></button>
+          <button type="button" class="slider__button"></button>
         </div>
       </section>
 
-      <!-- Подготовлена структура и весь css под JS -->
       <section class="bikes page__block" id="bikes">
         <div class="bikes__text-cont">
           <h2 class="bikes__title title">Велосипеды</h2>
@@ -178,7 +203,8 @@
       </div>
     </footer>
 
-    <script src="./scripts/bikes-script.js"></script>
     <script src="./scripts/header-burger.js"></script>
+    <script src="./scripts/slider-script.js"></script>
+    <script src="./scripts/bikes-script.js"></script>
     <script src="./scripts/footer-form.js"></script>
   </body>
