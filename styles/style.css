@@ -644,6 +644,18 @@
   font-weight: 600;
   font-family: "Inter", Arial, sans-serif;
 }
+@media (max-width: 1245px) {
+  .quote__text.theme-change_dark {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .quote__text.theme-change_dark {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
 
 .quote__author {
   margin: 0;
@@ -673,6 +685,18 @@
   color: white;
   font-weight: 500;
   font-family: "Inter", Arial, sans-serif;
+}
+@media (max-width: 1245px) {
+  .quote__author.theme-change_dark {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .quote__author.theme-change_dark {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .quote__author-occupation {
@@ -705,6 +729,18 @@
   color: rgba(229, 229, 229, 0.7);
   font-weight: 400;
   font-family: "Inter", Arial, sans-serif;
+}
+@media (max-width: 1245px) {
+  .quote__author-occupation.theme-change_dark {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .quote__author-occupation.theme-change_dark {
+    font-size: 10px;
+    line-height: 16px;
+  }
 }
 
 .slider {
@@ -1147,7 +1183,7 @@
 }
 @media (max-width: 768px) {
   .bikes__slider {
-    padding: 0 18px 60px;
+    padding: 0 18px 63px;
   }
 }
 
@@ -1213,6 +1249,7 @@
     opacity: 0;
     transition: visibility 0s linear 300ms, opacity 300ms;
     position: absolute;
+    padding-bottom: 20px;
   }
 }
 
@@ -1255,12 +1292,12 @@
   .bikes__card {
     width: 284px;
     height: 284px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 440px) {
   .bikes__card {
     margin-top: 20px;
-    padding-bottom: 22px;
     position: relative;
   }
 }
@@ -1304,7 +1341,7 @@
 }
 @media (max-width: 440px) {
   .bikes__name {
-    margin-top: -34px;
+    margin-top: -32px;
     margin-left: 0;
   }
 }
@@ -1316,6 +1353,13 @@
   font-weight: 600;
   font-family: "Inter", Arial, sans-serif;
 }
+@media (max-width: 768px) {
+  .bikes__name.theme-change_dark {
+    font-size: 14px;
+    line-height: 18px;
+    color: #151515;
+  }
+}
 
 .bikes__dots {
   display: none;
@@ -1323,7 +1367,7 @@
 @media (max-width: 768px) {
   .bikes__dots {
     display: block;
-    margin-top: 38px;
+    margin-top: 16px;
     position: relative;
     display: flex;
     justify-content: center;

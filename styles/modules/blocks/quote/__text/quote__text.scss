@@ -18,4 +18,14 @@
 
 .quote__text.theme-change_dark{
   @include font(34px, 44px, $textDarkThemeBold, 600);
+
+  @include nb-width {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @include tablet-width {
+    font-size: 23px;
+    line-height: 29px;
+  }
 }

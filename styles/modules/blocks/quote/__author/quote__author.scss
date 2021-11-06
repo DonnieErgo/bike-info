@@ -16,4 +16,14 @@
 
 .quote__author.theme-change_dark{
   @include font(20px, 32px, $textDarkThemeBold, 500);
+
+  @include nb-width {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @include tablet-width {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

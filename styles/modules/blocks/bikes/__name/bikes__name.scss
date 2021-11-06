@@ -23,11 +23,17 @@
   }
 
   @include mobile-width {
-    margin-top: -34px;
+    margin-top: -32px;
     margin-left: 0;
   }
 }
 
 .bikes__name.theme-change_dark{
   @include font (18px, 22px, $textDarkThemeBold, 600);
+
+  @include tablet-width {
+    font-size: 14px;
+    line-height: 18px;
+    color: $textLightThemeBold;
+  }
 }

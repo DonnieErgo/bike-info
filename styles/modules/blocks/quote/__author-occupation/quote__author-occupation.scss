@@ -18,4 +18,14 @@
 
 .quote__author-occupation.theme-change_dark{
   @include font(16px, 28px, $textDarkTheme, 400);
+
+  @include nb-width {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  @include tablet-width {
+    font-size: 10px;
+    line-height: 16px;
+  }
 }
