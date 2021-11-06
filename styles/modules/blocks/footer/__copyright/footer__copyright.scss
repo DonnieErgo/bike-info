@@ -3,3 +3,7 @@
   padding: 0;
   @include font(14px, 20px, #CFCFCF, 500);
 }
+
+.footer__copyright.theme-change_dark{
+  @include font(14px, 20px, #565656, 500);
+}

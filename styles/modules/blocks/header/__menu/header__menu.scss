@@ -7,7 +7,7 @@
   padding-bottom: 28px;
   margin-bottom: 0;
 
-  @include mobile-width {
+  @include tablet-width {
     padding: 0;
     visibility: hidden;
     opacity: 0;

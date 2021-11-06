@@ -1,0 +1,26 @@
+.theme__switch {
+  width: 44px;
+  height: 24px;
+  border: none;
+  background-color: #fff;
+  border-radius: 9999px;
+  cursor: pointer;
+  padding: 0;
+  color: transparent;
+
+  &::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: $buttonColor;
+    border-radius: 50%;
+    top: 4px;
+    left: 52px;
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover::after {
+    background-color: $buttonColorFilled;
+  }
+}

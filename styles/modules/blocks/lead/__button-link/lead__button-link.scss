@@ -24,3 +24,7 @@
     margin-top: 21px;
   }
 }
+
+.lead__button-link.theme-change_dark{
+  @include font(14px, 50px, $textLightThemeBold, 600);
+}

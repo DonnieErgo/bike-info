@@ -7,3 +7,7 @@
     margin-bottom: 40px;
   }
 }
+
+.footer__title.theme-change_dark{
+  @include font(24px, 32px, $textDarkThemeBold, 600);
+}

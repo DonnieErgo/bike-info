@@ -6,9 +6,17 @@
     opacity: 0.75;
   }
 
+  @include tablet-width {
+    color: $textLightThemeBold;
+  }
+
   @include mobile-width{
     &:hover {
       opacity: 1;
     }
   }
+}
+
+.bikes__selector_active.theme-change_dark{
+  color: $textDarkThemeBold;
 }

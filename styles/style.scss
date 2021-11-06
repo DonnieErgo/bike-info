@@ -19,6 +19,8 @@
 @import './modules/blocks/header/__menu-item/header__menu-item.scss';
 @import './modules/blocks/header/__burger/header__burger.scss';
 @import './modules/blocks/header/__burger/_active/header__burger_active.scss';
+@import './modules/blocks/header/__theme-switch/header__theme-switch.scss';
+@import './modules/blocks/header/__theme-switch/__theme-switch_active/header__theme-switch_active.scss';
 
 @import './modules/blocks/lead/lead.scss';
 @import './modules/blocks/lead/__title/lead__title.scss';
@@ -83,6 +85,12 @@
 @import './modules/blocks/apps/__link/apps__link.scss';
 @import './modules/blocks/apps/__img/apps__img.scss';
 
+@import './modules/blocks/theme/theme.scss';
+@import './modules/blocks/theme/__icon-dark/theme__icon-dark.scss';
+@import './modules/blocks/theme/__icon-light/theme__icon-light.scss';
+@import './modules/blocks/theme/__switch/theme__switch.scss';
+@import './modules/blocks/theme/__switch/__switch_dark/theme__switch_dark.scss';
+
 @import './modules/blocks/footer/footer.scss';
 @import './modules/blocks/footer/__container/footer__container.scss';
 @import './modules/blocks/footer/__text-container/footer__text-container.scss';
@@ -92,7 +100,7 @@
 @import './modules/blocks/footer/__submit-btn/footer__submit-btn.scss';
 @import './modules/blocks/footer/__submit-btn/_active/footer__submit-btn_active.scss';
 @import './modules/blocks/footer/__copyright/footer__copyright.scss';
-@import './modules/blocks/footer/__theme-switch/footer__theme-switch.scss';
 @import './modules/blocks/footer/__logo/footer__logo.scss';
+@import './modules/blocks/footer/__theme-switch/footer__theme-switch.scss';
 
 @import './modules/blocks/main/main.scss';

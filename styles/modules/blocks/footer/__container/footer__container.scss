@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 0 50px;
   position: relative;
+  justify-content: space-between;
 
   @include tablet-width {
     padding: 0 18px;

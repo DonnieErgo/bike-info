@@ -27,3 +27,7 @@
     margin-left: 0;
   }
 }
+
+.bikes__name.theme-change_dark{
+  @include font (18px, 22px, $textDarkThemeBold, 600);
+}

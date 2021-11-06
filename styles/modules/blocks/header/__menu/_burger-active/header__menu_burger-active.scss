@@ -1,7 +1,11 @@
 .header__menu_burger-active{
   visibility: visible;
   opacity: 1;
-  background-color: #f4f4f4;
+  background-color: $backgroundLightTheme;
   height: 100vh;
   padding-top: 144px;
+}
+
+.header__menu_burger-active.theme-change_dark{
+  background-color: $backgroundDarkTheme;
 }

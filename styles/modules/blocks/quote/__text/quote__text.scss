@@ -15,3 +15,7 @@
     margin-bottom: 40px;
   }
 }
+
+.quote__text.theme-change_dark{
+  @include font(34px, 44px, $textDarkThemeBold, 600);
+}
