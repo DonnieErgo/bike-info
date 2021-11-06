@@ -1,0 +1,12 @@
+.bikes{
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+
+  @include mobile-width {
+    @include mobile-border;
+    padding-top: 40px;
+  }
+}

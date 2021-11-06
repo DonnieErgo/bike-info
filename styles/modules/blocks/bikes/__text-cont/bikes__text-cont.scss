@@ -1,0 +1,14 @@
+.bikes__text-cont{
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 50px;
+
+  @include tablet-width {
+    flex-flow: column nowrap;
+    padding: 0 18px 0;
+  }
+}

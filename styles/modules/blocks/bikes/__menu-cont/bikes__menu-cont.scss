@@ -1,0 +1,11 @@
+.bikes__menu-cont {
+
+  @include tablet-width{
+    position: relative;
+    width: 114px;
+    height: 30px;
+    border: 1px solid $formBorderLightTheme;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+}

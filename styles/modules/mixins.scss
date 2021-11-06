@@ -1,0 +1,53 @@
+@mixin font ($fontSize, $lineHeigt, $color, $fontWeight) {
+  font-size: $fontSize;
+  line-height: $lineHeigt;
+  color: $color;
+  font-weight: $fontWeight;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+@mixin lead-shadow {
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.2));
+}
+
+@mixin card-shadow {
+  filter: drop-shadow(-20px 10px 140px rgba(0, 0, 0, 0.06));
+}
+
+@mixin mobile-border {
+  &::after {
+    content: "";
+    background: $formBorderLightTheme;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 1px;
+    width: calc(100% - 36px);
+  }
+}
+
+@mixin reset-list {
+  list-style: none;
+
+    a {
+      text-decoration: none;
+    }
+}
+
+@mixin nb-width {
+  @media (max-width: 1245px){
+      @content;
+  }
+}
+
+@mixin tablet-width {
+  @media (max-width: 768px){
+      @content;
+  }
+}
+
+@mixin mobile-width {
+  @media (max-width: 440px){
+      @content;
+  }
+}

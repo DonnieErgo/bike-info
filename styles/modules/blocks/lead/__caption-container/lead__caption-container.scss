@@ -1,0 +1,14 @@
+.lead__caption-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 117px 0 auto;
+
+  @include nb-width {
+    margin: 20px 0 auto;
+  }
+
+  @media (max-width: 946px){
+    display: none;
+  }
+}

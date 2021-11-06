@@ -1,0 +1,14 @@
+@mixin fface($path, $ffamily, $weight) {
+  @font-face{
+    src: url('#{$path}.woff2') format('woff2'),
+    url('#{$path}.woff') format('woff'),
+    url('#{$path}.ttf') format('ttf');
+  font-family: '#{$ffamily}';
+  font-weight: $weight;
+  }
+}
+
+@include fface('../vendor/Inter/inter-regular-400', 'Inter', 400);
+@include fface('../vendor/Inter/inter-medium-500', 'Inter', 500);
+@include fface('../vendor/Inter/inter-semi-bold-600', 'Inter', 600);
+@include fface('../vendor/Inter/inter-bold-700', 'Inter', 700);

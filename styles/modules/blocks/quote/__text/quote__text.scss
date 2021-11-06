@@ -1,0 +1,31 @@
+.quote__text{
+  margin: 0;
+  padding: 0;
+  @include font(34px, 44px, $textLightThemeBold, 600);
+  letter-spacing: -0.5px;
+
+  @include nb-width {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @include tablet-width {
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+}
+
+.quote__text.theme-change_dark{
+  @include font(34px, 44px, $textDarkThemeBold, 600);
+
+  @include nb-width {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @include tablet-width {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}

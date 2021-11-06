@@ -1,0 +1,40 @@
+.bikes__card{
+  @include card-shadow;
+  border-radius: 20px;
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundLightTheme;
+
+  @include nb-width {
+    width: 320px;
+    height: 320px;
+  }
+
+  @media (max-width: 1050px){
+    width: 290px;
+    height: 290px;
+  }
+
+  @media (max-width: 950px){
+    width: 220px;
+    height: 220px;
+  }
+
+  @include tablet-width {
+    width: 284px;
+    height: 284px;
+    padding-bottom: 20px;
+  }
+
+  @include mobile-width {
+    margin-top: 20px;
+    position: relative;
+  }
+}
+
+.bikes__card.theme-change_dark{
+  background-color: $backgroundDarkTheme;
+}

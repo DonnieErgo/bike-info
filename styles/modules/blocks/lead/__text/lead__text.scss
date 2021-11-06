@@ -1,0 +1,12 @@
+.lead__text{
+  margin: 0;
+
+  @include tablet-width {
+    margin-right: 18px;
+  }
+
+  @include mobile-width {
+    margin-right: 0;
+    margin-top: 18px;
+  }
+}

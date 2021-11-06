@@ -1,0 +1,24 @@
+.slider__controls{
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 7;
+
+  margin: 50px 0 0 120px;
+
+  @include nb-width {
+    margin: 0 0 0 100px;
+  }
+
+  @include tablet-width {
+    grid-column: 1;
+    grid-row: 1;
+    width: 58px;
+    height: 24px;
+    margin: 12px 0 0 244px;
+  }
+
+  @include mobile-width {
+    margin: 50px 0 0 244px;
+  }
+}

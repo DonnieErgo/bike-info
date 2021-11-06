@@ -1,0 +1,13 @@
+.footer__title{
+  margin: 0 0 50px 0;
+  padding: 0;
+  @include font(24px, 32px, $textLightThemeBold, 600);
+
+  @include tablet-width {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__title.theme-change_dark{
+  @include font(24px, 32px, $textDarkThemeBold, 600);
+}

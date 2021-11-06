@@ -1,0 +1,38 @@
+.title{
+  @include font(55px, 60px, $textLightThemeBold, 700);
+  letter-spacing: -0.5px;
+
+  @include nb-width {
+    font-size: 45px;
+    line-height:50px;
+  }
+
+  @include tablet-width {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  @include mobile-width {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.title.theme-change_dark{
+  @include font(55px, 60px, $textDarkThemeBold, 700);
+
+  @include nb-width {
+    font-size: 45px;
+    line-height:50px;
+  }
+
+  @include tablet-width {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  @include mobile-width {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

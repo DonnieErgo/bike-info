@@ -1,0 +1,13 @@
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  min-height: 74px;
+  z-index: 10;
+  background-color: $backgroundLightTheme;
+}
+
+.header.theme-change_dark{
+  background-color: $backgroundDarkTheme;
+}

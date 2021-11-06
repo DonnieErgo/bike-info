@@ -1,0 +1,27 @@
+.lead__bicycle-card{
+  position: sticky;
+  width: 440px;
+  height: 300px;
+  background-color: $backgroundLightTheme;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include lead-shadow;
+  border-radius: 20px;
+  top: 347px;
+
+  @include nb-width {
+    width: 400px;
+    height: 272px;
+  }
+
+  @media (max-width: 946px){
+    width: 340px;
+    height: 231px;
+  }
+
+  @include mobile-width {
+    width: 235px;
+    height: 160px;
+  }
+}

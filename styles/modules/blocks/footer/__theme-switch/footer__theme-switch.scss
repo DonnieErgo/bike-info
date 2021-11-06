@@ -1,0 +1,10 @@
+.footer__theme-switch {
+  position: relative;
+  height: 28px;
+  align-self: flex-end;
+  margin-bottom: 6px;
+
+  @include tablet-width {
+    display: none;
+  }
+}

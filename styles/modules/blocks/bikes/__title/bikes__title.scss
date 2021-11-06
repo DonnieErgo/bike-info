@@ -1,0 +1,7 @@
+.bikes__title{
+  margin: 0;
+
+  @include tablet-width {
+    margin-bottom: 42px;
+  }
+}

@@ -1,0 +1,20 @@
+.header__menu-link {
+  transition: opacity 0.2s ease-in-out;
+  @include font(14px, 18px, $textLightThemeBold, 500);
+
+  @include tablet-width {
+    @include font(18px, 18px, $textLightThemeBold, 500);
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.header__menu-link.theme-change_dark{
+  @include font(14px, 18px, $textDarkThemeBold, 500);
+
+  @include tablet-width {
+    @include font(18px, 18px, $textDarkThemeBold, 500);
+  }
+}

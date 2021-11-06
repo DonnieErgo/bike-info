@@ -1,0 +1,11 @@
+.lead__caption-line{
+  margin: 0;
+  height: 2px;
+  width: 123px;
+  border: none;
+  background-color: $leadCaptionLineLightTheme;
+}
+
+.lead__caption-line.theme-change_dark{
+  background-color: $leadCaptionLineDarkTheme;
+}

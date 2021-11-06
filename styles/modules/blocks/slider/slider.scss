@@ -1,0 +1,10 @@
+.slider{
+  padding: 0;
+  max-width: 1440px;
+  position: relative;
+  display: grid;
+
+  @include mobile-width {
+    @include mobile-border;
+  }
+}

@@ -1,0 +1,39 @@
+.bikes__name{
+  position: relative;
+  margin: 22px 0 0 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @include font (18px, 22px, $textLightThemeBold, 600);
+
+  @media (max-width: 950px){
+    max-width: 200px;
+  }
+
+  @include tablet-width {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: none;
+    z-index: 5;
+    margin-top: -35px;
+    margin-left: 15px;
+    align-self: center;
+  }
+
+  @include mobile-width {
+    margin-top: -32px;
+    margin-left: 0;
+  }
+}
+
+.bikes__name.theme-change_dark{
+  @include font (18px, 22px, $textDarkThemeBold, 600);
+
+  @include tablet-width {
+    font-size: 14px;
+    line-height: 18px;
+    color: $textLightThemeBold;
+  }
+}

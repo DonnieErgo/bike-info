@@ -1,0 +1,20 @@
+.quote__photo{
+  width: 650px;
+
+  @include nb-width {
+    width: 500px;
+  }
+
+  @media (max-width: 946px){
+    width: 400px;
+  }
+
+  @include tablet-width {
+    justify-self: center;
+    width: 350px;
+  }
+
+  @include mobile-width {
+    width: 284px;
+  }
+}

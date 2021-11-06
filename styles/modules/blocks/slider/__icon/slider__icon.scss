@@ -1,0 +1,19 @@
+.slider__icon{
+  background: transparent;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  transition: visibility 0.4s linear 0s, opacity 300ms ease-in-out;
+
+  @include nb-width {
+    bottom: 104px;
+  }
+
+  @include tablet-width {
+    width: 70px;
+    height: 28px;
+    bottom: 14px;
+  }
+}

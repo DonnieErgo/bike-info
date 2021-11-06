@@ -1,0 +1,17 @@
+.bikes__dot{
+  width: 4px;
+  height: 4px;
+  background: #CACACA;
+  border-radius: 50%;
+  margin: 0 2.5px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: all .2s ease-in-out;
+
+  &:hover{
+    opacity: 0.8;
+    background: #151515;
+    transform: scale(1.2);
+  }
+}

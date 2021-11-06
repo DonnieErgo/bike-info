@@ -1,0 +1,22 @@
+.apps{
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  @include nb-width{
+    gap: 20px;
+  }
+
+  @include tablet-width{
+    gap: 40px;
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    margin-top: 17px;
+  }
+
+  @include mobile-width{
+    @include mobile-border;
+    margin-bottom: 60px;
+  }
+}

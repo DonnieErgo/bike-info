@@ -1,0 +1,6 @@
+.bikes__element_active{
+  visibility: visible;
+  opacity: 1;
+  position: static;
+  transition: visibility 0.4s linear 0s, opacity 300ms ease-in-out;
+}

@@ -1,0 +1,27 @@
+.bikes__selector-btn{
+  display: none;
+
+  @include tablet-width {
+    display: block;
+    background-image: url('../images/bikes/menu-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: top 5px right 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    margin: 7px 0 0 11px;
+
+    @include font (11px, 14px, $textLightThemeBold, 600)
+  }
+}
+
+.bikes__selector-btn.theme-change_dark{
+
+  @include tablet-width {
+    @include font (11px, 14px, $textDarkThemeBold, 600)
+  }
+}

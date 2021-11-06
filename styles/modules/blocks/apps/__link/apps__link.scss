@@ -1,0 +1,19 @@
+.apps__link{
+  text-decoration: none;
+  @include font(18px, 28px, $textLightThemeBold, 600);
+  margin-right: 30px;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover{
+    opacity: 0.75;
+  }
+
+  @include tablet-width{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.apps__link.theme-change_dark{
+  @include font(18px, 28px, $textDarkThemeBold, 600);
+}

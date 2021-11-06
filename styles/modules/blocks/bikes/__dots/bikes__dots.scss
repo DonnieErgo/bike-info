@@ -1,0 +1,12 @@
+.bikes__dots{
+  display: none;
+
+  @include tablet-width{
+    display: block;
+    margin-top: 16px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+  }
+}

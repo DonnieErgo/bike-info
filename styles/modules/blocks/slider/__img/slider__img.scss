@@ -1,0 +1,11 @@
+.slider__img{
+  height: 100%;
+
+  @include nb-width {
+    height: 250px;
+  }
+
+  @include tablet-width {
+    height: 175px;
+  }
+}
