@@ -6,6 +6,9 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   width: 100%;
-  // background-color: wheat;
   background-color: $backgroundLightTheme;
+}
+
+.page.theme-change_dark{
+  background-color: $backgroundDarkTheme;
 }

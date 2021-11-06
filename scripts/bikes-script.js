@@ -50,7 +50,7 @@ function showSlides(n) {
 
 // Открываем дропдаун при маленьком разрешении и переключаем табы при большом
 function toggleDrop() {
-  container.classList.toggle('bikes__select-cont_active');
+  window.innerWidth <= 768 ? container.classList.toggle('bikes__select-cont_active') : false;
 }
 
 // Закрытие дропдауна

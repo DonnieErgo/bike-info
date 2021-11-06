@@ -14,7 +14,7 @@
   padding: 0;
   border: none;
 
-    @include mobile-width {
+    @include tablet-width {
       visibility: visible;
       opacity: 1;
   }

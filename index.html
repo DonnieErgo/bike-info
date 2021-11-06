@@ -10,23 +10,28 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
-  <body class="page">
+  <body class="page theme-change">
 
-    <header class="header">
+    <header class="header theme-change">
       <nav>
-        <ul class="header__menu page__block">
-          <li class="header__menu-item"><a href="#gradients" class="header__menu-link">Покрытия и градиенты</a></li>
-          <li class="header__menu-item"><a href="#bikes" class="header__menu-link">Велосипеды</a></li>
-          <li class="header__menu-item"><a href="#apps" class="header__menu-link">Тренировки</a></li>
+        <ul class="header__menu theme-change page__block">
+          <li class="header__menu-item"><a href="#gradients" class="header__menu-link theme-change">Покрытия и градиенты</a></li>
+          <li class="header__menu-item"><a href="#bikes" class="header__menu-link theme-change">Велосипеды</a></li>
+          <li class="header__menu-item"><a href="#apps" class="header__menu-link theme-change">Тренировки</a></li>
         </ul>
         <button type="button" class="header__burger"></button>
+        <div class="theme header__theme-switch">
+          <div class="theme__icon-light"></div>
+          <button type="button" class="theme__switch"></button>
+          <div class="theme__icon-dark"></div>
+        </div>
       </nav>
     </header>
 
     <main class="main">
 
       <section class="lead">
-        <h1 class="lead__title title">Шоссе, ТТ<br> и Грэвел</h1>
+        <h1 class="lead__title title theme-change">Шоссе, ТТ<br> и Грэвел</h1>
         <div class="lead__images">
           <div class="lead__side-img"></div>
           <div class="lead__bicycle-area">
@@ -35,29 +40,29 @@
             </div>
           </div>
         </div>
-        <p class="lead__text basic-text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-        <a href="#" class="lead__button-link">Подробнее</a>
+        <p class="lead__text basic-text theme-change">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+        <a href="#" class="lead__button-link theme-change">Подробнее</a>
         <div class="lead__caption-container">
-          <p class="lead__bicycle-name">Cannondale Systemsix</p>
-          <hr class="lead__caption-line">
+          <p class="lead__bicycle-name theme-change">Cannondale Systemsix</p>
+          <hr class="lead__caption-line theme-change">
         </div>
       </section>
 
       <section class="quote page__block">
         <img src="./images/quote/photo.png" alt="" class="quote__photo">
         <div class="quote__text-container">
-          <h2 class="quote__text">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
+          <h2 class="quote__text theme-change">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
           <div>
-            <p class="quote__author">Эдди Меркс</p>
-            <p class="quote__author-occupation">Велогонщик</p>
+            <p class="quote__author theme-change">Эдди Меркс</p>
+            <p class="quote__author-occupation theme-change">Велогонщик</p>
           </div>
         </div>
       </section>
 
       <section class="slider page__block" id="gradients">
         <article class="slider__container slider__container_active">
-          <h2 class="slider__title title">Шоссе</h2>
-          <p class="slider__text basic-text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+          <h2 class="slider__title title theme-change">Шоссе</h2>
+          <p class="slider__text basic-text theme-change">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
           <div class="slider__slider">
             <div class="slider__slider-wrapper">
               <div class="slider__picture-container">
@@ -73,8 +78,8 @@
           </div>
         </article>
         <article class="slider__container">
-          <h2 class="slider__title title">Грэвел</h2>
-          <p class="slider__text basic-text">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+          <h2 class="slider__title title theme-change">Грэвел</h2>
+          <p class="slider__text basic-text theme-change">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
           <div class="slider__slider">
             <div class="slider__slider-wrapper">
               <div class="slider__picture-container">
@@ -89,8 +94,8 @@
             </div>
           </div>
         </article><article class="slider__container">
-          <h2 class="slider__title title">ТТ</h2>
-          <p class="slider__text basic-text">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
+          <h2 class="slider__title title theme-change">ТТ</h2>
+          <p class="slider__text basic-text theme-change">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
           <div class="slider__slider">
             <div class="slider__slider-wrapper">
               <div class="slider__picture-container">
@@ -106,20 +111,20 @@
           </div>
         </article>
         <div class="slider__controls">
-          <button type="button" class="slider__button"></button>
-          <button type="button" class="slider__button"></button>
+          <button type="button" class="slider__button theme-change"></button>
+          <button type="button" class="slider__button theme-change"></button>
         </div>
       </section>
 
       <section class="bikes page__block" id="bikes">
         <div class="bikes__text-cont">
-          <h2 class="bikes__title title">Велосипеды</h2>
+          <h2 class="bikes__title title theme-change">Велосипеды</h2>
           <div class="bikes__menu-cont">
-            <div class="bikes__select-cont">
-              <button type="button" class="bikes__selector-btn">Шоссе</button>
-              <button type="button" class="bikes__selector basic-text bikes__selector_active bikes__selector_shosse">Шоссе</button>
-              <button type="button" class="bikes__selector basic-text bikes__selector_grevel">Грэвел</button>
-              <button type="button" class="bikes__selector basic-text bikes__selector_triatlon">ТТ</button>
+            <div class="bikes__select-cont theme-change">
+              <button type="button" class="bikes__selector-btn theme-change">Шоссе</button>
+              <button type="button" class="bikes__selector theme-change basic-text bikes__selector_active bikes__selector_shosse">Шоссе</button>
+              <button type="button" class="bikes__selector theme-change basic-text bikes__selector_grevel">Грэвел</button>
+              <button type="button" class="bikes__selector theme-change basic-text bikes__selector_triatlon">ТТ</button>
             </div>
           </div>
         </div>
@@ -127,43 +132,43 @@
           <ul class="bikes__slider-wrapper bikes__slider-wrapper_active">
             <li class="bikes__element bikes__element_target bikes__element_active">
               <a href="https://www.cervelo.com/en/caledonia-5" target="_blank" class="bikes__card"><img src="./images/bikes/bike-sh-1.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Cervelo Caledonia-5</p>
+              <p class="bikes__name theme-change">Cervelo Caledonia-5</p>
             </li>
             <li class="bikes__element bikes__element_target">
               <a href="https://www.cannondale.com/en-eu/bikes/road/race/systemsix/systemsix-hi-mod-ultegra-di2" target="_blank" class="bikes__card"><img src="./images/bikes/bike-sh-2.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Cannondale Systemsix Himod</p>
+              <p class="bikes__name theme-change">Cannondale Systemsix Himod</p>
             </li>
             <li class="bikes__element bikes__element_target">
               <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank" class="bikes__card"><img src="./images/bikes/bike-sh-3.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Trek Domane SL-7</p>
+              <p class="bikes__name theme-change">Trek Domane SL-7</p>
             </li>
           </ul>
           <ul class="bikes__slider-wrapper">
             <li class="bikes__element bikes__element_active">
               <a href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE" target="_blank" class="bikes__card"><img src="./images/bikes/bike-gr-1.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Cervelo Aspero GRX 810</p>
+              <p class="bikes__name theme-change">Cervelo Aspero GRX 810</p>
             </li>
             <li class="bikes__element">
               <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9" target="_blank" class="bikes__card"><img src="./images/bikes/bike-gr-2.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Specialized S-Works Diverge</p>
+              <p class="bikes__name theme-change">Specialized S-Works Diverge</p>
             </li>
             <li class="bikes__element">
               <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8" target="_blank" class="bikes__card"><img src="./images/bikes/bike-gr-3.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Cannondale Topstone Lefty 3</p>
+              <p class="bikes__name theme-change">Cannondale Topstone Lefty 3</p>
             </li>
           </ul>
           <ul class="bikes__slider-wrapper">
             <li class="bikes__element bikes__element_active">
               <a href="https://www.specialized.com/us/en/shiv-sport/p/129271?color=240037-129271" target="_blank" class="bikes__card"><img src="./images/bikes/bike-tt-1.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Specialized S-Works Shiv</p>
+              <p class="bikes__name theme-change">Specialized S-Works Shiv</p>
             </li>
             <li class="bikes__element">
               <a href="https://www.thebicyclelounge.co.uk/2021-bmc-timemachine-01-one-force-etap-axs-disc-tt-tri-bike/" target="_blank" class="bikes__card"><img src="./images/bikes/bike-tt-2.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">BMC Timemachine 01 ONE</p>
+              <p class="bikes__name theme-change">BMC Timemachine 01 ONE</p>
             </li>
             <li class="bikes__element">
               <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q" target="_blank" class="bikes__card"><img src="./images/bikes/bike-tt-3.png" alt="Фото велосипеда" class="bikes__photo"></a>
-              <p class="bikes__name">Cervelo P-Series</p>
+              <p class="bikes__name theme-change">Cervelo P-Series</p>
             </li>
           </ul>
           <div class="bikes__dots">
@@ -175,34 +180,37 @@
       </section>
 
       <section class="apps page__block" id="apps">
-        <h2 class="apps__title title">Тренировки</h2>
-        <p class="apps__text basic-text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+        <h2 class="apps__title title theme-change">Тренировки</h2>
+        <p class="apps__text basic-text theme-change">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
         <div class="apps__links">
-          <a href="https://www.strava.com" target="_blank" class="apps__link ">Strava</a>
-          <a href="https://www.komoot.com" target="_blank" class="apps__link">Komoot</a>
+          <a href="https://www.strava.com" target="_blank" class="apps__link theme-change">Strava</a>
+          <a href="https://www.komoot.com" target="_blank" class="apps__link theme-change">Komoot</a>
         </div>
         <img src="./images/apps/pic1.png" alt="Фото" class="apps__img">
       </section>
 
     </main>
 
-    <footer class="footer page__block">
+    <footer class="footer page__block theme-change">
       <div class="footer__container">
         <div class="footer__text-container">
-          <h2 class="footer__title">Подпишитесь на<br> рассылку —</h2>
-          <form class="footer__email-form">
-            <input type="email" placeholder="Ваш e-mail" name="email" id="email" class="footer__email-input" required>
+          <h2 class="footer__title theme-change">Подпишитесь на<br> рассылку —</h2>
+          <form class="footer__email-form theme-change">
+            <input type="email" placeholder="Ваш e-mail" name="email" id="email" class="footer__email-input theme-change" required>
             <button type="submit" class="footer__submit-btn">ok</button>
           </form>
-          <p class="footer__copyright">© Road Club 2021</p>
+          <p class="footer__copyright theme-change">© Road Club 2021</p>
         </div>
-        <div class="footer__theme-switch">
-
+        <div class="theme footer__theme-switch">
+          <div class="theme__icon-light"></div>
+          <button type="button" class="theme__switch"></button>
+          <div class="theme__icon-dark"></div>
         </div>
         <a href="#" class="footer__logo"></a>
       </div>
     </footer>
 
+    <script src="./scripts/theme-switch.js"></script>
     <script src="./scripts/header-burger.js"></script>
     <script src="./scripts/slider-script.js"></script>
     <script src="./scripts/bikes-script.js"></script>

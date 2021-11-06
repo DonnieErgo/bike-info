@@ -6,3 +6,7 @@
     margin: 0 30px 0 0;
   }
 }
+
+.lead__bicycle-name.theme-change_dark{
+  @include font(18px, 18px, $textDarkThemeBold, 400);
+}
