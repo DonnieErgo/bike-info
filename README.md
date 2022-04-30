@@ -1,18 +1,19 @@
-### Проект: Лендинг по макету HARD — 01
+### Bike landing project
 
-### Стек
+### Tech stack
 
 * Figma
-* HTML/SCSS > Flexbox/Grid
+* HTML/SCSS
+* Flexbox/Grid
 * Vanilla JS
 
-### Описание
+### Description
 
-##### Проект адаптивного лендинга по макету с разными интерактивными элементами. В проекте:
-- SCSS и его фичи для верстки
-- Два слайдера и дропдаун с табами, написанные на vanilla JS
-- Тёмная тема с динамически расположенными переключателями
-- Бургерное меню и sticky-header
+##### Project of adaptive lending with different interactive elements. This project includes:
+- SCSS and its features for the layout
+- Two sliders and a dropdown with tabs, written in vanilla JS
+- Dark theme with dynamically placed radio buttons
+- Burger menu and sticky-header
 
-*Ссылка на GitHub Pages*
+*GitHub Pages link*
 https://donnieergo.github.io/bike-info/
